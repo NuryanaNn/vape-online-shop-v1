@@ -1,0 +1,907 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Bebas Neue', cursive;
+}
+
+header .navbar{
+    background-color: #0a0a0a;
+    padding: 1rem 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navbar .logo img{
+    width: 50px;
+}
+
+header .navbar .navigation ul{
+    display: flex;
+    list-style: none;
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header .navSci ul{
+    display: flex;
+    list-style: none;
+}
+
+header li{
+    margin-right: 40px;
+}
+
+/* Hero Section */
+.hero .card{
+    height: 660px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0rem 6%;
+}
+
+.hero .card1{
+    background-image: url('slider1.jpg');
+}
+
+.hero .card2{
+    background-image: url('slider2.jpg');
+}
+
+.hero .cardText{
+    color: #fff;
+}
+
+.hero .cardText h3{
+    color: #1391e8;
+    font-size: 40px;
+}
+
+.hero .cardText h1{
+    font-size: 100px;
+    letter-spacing: 15px;
+}
+
+.hero .cardText p{
+    max-width: 500px;
+}
+
+.hero .cardText button{
+    background: linear-gradient(90deg, rgba(80,14,126,1) 0%, rgba(28,127,218,1) 100%);
+    padding: 15px 25px;
+    color: #fff;
+    border: none;
+    margin-top: 15px;
+    text-transform: capitalize;
+}
+
+/* Collection */
+.collection{
+    padding: 4rem 4%;
+    background-color: #150e17;
+}
+
+.collection .title,
+.brand .title,
+.seller .title,
+.fav .title,
+.hot .title,
+.featured .title,
+.service .title,
+.latest .title,
+.news .title{
+    text-align: center;
+}
+
+.collection .title h3,
+.brand .title h3,
+.seller .title h3,
+.fav .title h3,
+.hot .title h3,
+.featured .title h3,
+.service .title h3,
+.latest .title h3,
+.news .title h3{
+    color:#1391e8 ;
+}
+
+.collection .title h1,
+.brand .title h1,
+.seller .title h1,
+.fav .title h1,
+.hot .title h1,
+.featured .title h1,
+.service .title h1,
+.latest .title h1,
+.news .title h1{
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.collectionContent{
+    margin-top: 60px;
+}
+
+.collectionContent .card{
+    width: 300px;
+    color: #fff;
+    border: 1px solid #241a24;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.collectionContent .card:hover{
+    background: linear-gradient(90deg, rgba(80,14,126,1) 0%, rgba(28,127,218,1) 100%);
+    transition: .5s;
+}
+
+.collectionContent .card h3{
+    letter-spacing: 4px;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.collectionContent .card .images{
+    background-color: #241a24;
+}
+
+.collectionContent .card .images,
+.collectionContent .card .images img{
+    width: 100%;
+}
+
+/* Brand */
+.brand, .fav{
+    background-color: #000000;
+    padding: 3rem 4%;
+}
+
+.brandCategory{
+    margin-top: 30px;
+}
+
+.brandCategory ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.brandCategory li{
+    margin-right: 20px;
+}
+
+.brandCategory button{
+    background-color: #1c1c1c;
+    padding: 15px 25px;
+    color: #fff;
+    border: none;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.brandCategory button:hover{
+    background: linear-gradient(90deg, rgba(80,14,126,1) 0%, rgba(28,127,218,1) 100%);
+}
+
+.brandCategory button::before{
+    position: absolute;
+    content: '';
+    background-image: url('icapt.png');
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30px;
+    background-repeat: no-repeat;
+}
+
+.brandCategory li:nth-child(1) button{
+    background: linear-gradient(90deg, rgba(80,14,126,1) 0%, rgba(28,127,218,1) 100%);
+}
+
+
+/* Brand Content */
+.brandContent {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+
+.brandContent .card{
+    color: #fff;
+    text-align: center;
+    width: 260px;
+    border: 1px solid #241a24;
+    cursor: pointer;
+    position: relative;
+    height: 400px;
+}
+
+.brandContent .card .images,
+.brandContent .card .images img{
+    width: 100%;
+}
+
+.brandContent .card .cardText{
+    padding-top: 20px;
+    border-top: 1px solid #241a24;
+}
+
+.ratting ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.ratting ul li{
+    margin-right: 6px;
+    color: gold;
+}
+
+.brandContent .card .cardText h3,
+.brandContent .card .cardText h4{
+    letter-spacing: 2px;
+}
+
+.brandContent .card .cardText h3{
+    margin: 10px 0;
+}
+
+.brandContent .card .cardText h4{
+    color: #1391e8;
+}
+
+.brandContent .card .overlay{
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.brandContent .card .overlay h3{
+    background-color: #1391e8;
+    padding: 5px 10px;
+}
+
+.brandContent .card .overlay h4{
+    background-color: green;
+    padding: 5px 10px;
+}
+
+.brandContent .card .purchase{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+.brandContent .card .purchase ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: .5s;
+}
+
+.brandContent .card:hover .purchase ul{
+    transform: translateY(0px);
+    transform-origin: top;
+    opacity: 1;
+}
+
+.brandContent .card .purchase li{
+    margin-right: 10px;
+}
+
+.brandContent .card .purchase li i{
+    color: #000000;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Promote */
+.promoteContent{
+    background-color: #241a24;
+    padding: 4rem 4%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.promoteContent .card{
+    position: relative;
+    width: 350px;
+    cursor: pointer;
+    overflow: hidden;
+    height: 500px;
+}
+
+.promoteContent .card .images,
+.promoteContent .card .images img{
+    width: 100%;
+    height: 100%;
+}
+
+.promoteContent .card .cardText{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.promoteContent .card .cardText h3{
+    color: #1391e8;
+    font-size: 20px;
+}
+
+.promoteContent .card .cardText h1{
+    color: #fff;
+    font-size: 60px;
+    text-shadow: 2px 2px #000;
+}
+
+.promoteContent .card .overlay{
+    position: absolute;
+    top: 0;
+    left: -50px;
+    background-color: rgba(255, 255, 255, .1);
+    width: 50px;
+    height: 100%;
+    content: '';
+    transition: .5s;
+}
+
+.promoteContent .card:hover .overlay{
+    left: 100%;
+    opacity: 0;
+    transition: .5s;
+}
+
+.bigNews{
+    background-color: #241a24;
+    padding: 0rem 4%;
+    padding-bottom: 40px;
+}
+
+.bigNews .card{
+    position: relative;
+    display: flex;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bigNews .cardText{
+    position: absolute;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 6%;
+}
+
+.bigNews .cardText h3{
+    font-size: 50px;
+    color: #1391e8;
+}
+
+.bigNews .cardText h1{
+    font-size: 80px;
+    letter-spacing: 5px;
+}
+
+.bigNews .cardText button{
+    background: linear-gradient(90deg, rgba(80,14,126,1) 0%, rgba(28,127,218,1) 100%);
+    padding: 15px 25px;
+    color: #fff;
+    border: none;
+    margin-top: 15px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+/* Seller */
+.seller{
+    background-color: #000000;
+    padding: 4rem 0;
+}
+
+.sellerContent{
+    padding: 4rem 4%;
+}
+
+.sellerContent .card{
+    width: 300px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #241a24;
+    cursor: pointer;
+    position: relative;
+}
+
+.sellerContent .card .images,
+.sellerContent .card .images img{
+    width: 100%;
+}
+
+.sellerContent .card .cardText{
+    padding: 15px 0;
+    border-top: 1px solid #241a24;
+}
+
+.sellerContent .card .cardText h3{
+    margin: 10px 0;
+    letter-spacing: 4px;
+}
+
+.sellerContent .card .cardText h4{
+    color:#1391e8 ;
+}
+
+.sellerContent .card .overlay{
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.sellerContent .card .overlay h3{
+    background-color: #1391e8;
+    padding: 5px 10px;
+}
+
+.sellerContent .card .overlay h4{
+    background-color: green;
+    padding: 5px 10px;
+}
+
+
+.sellerContent .card .purchase{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+.sellerContent .card .purchase ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: .5s;
+}
+
+.sellerContent .card:hover .purchase ul{
+    transform: translateY(0px);
+    transform-origin: top;
+    opacity: 1;
+}
+
+.sellerContent .card .purchase li{
+    margin-right: 10px;
+}
+
+.sellerContent .card .purchase li i{
+    color: #000000;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* fav */
+.favCategory{
+    color: #fff;
+    margin-top: 30px;
+}
+
+.favCategory ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.favCategory ul li{
+    margin-right: 50px;
+}
+
+.favCategory .card{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.favCategory ul li:nth-child(1) .card .images{
+    background: linear-gradient(90deg, rgba(80,14,126,1) 0%, rgba(28,127,218,1) 100%);
+}
+
+.favCategory .card .images{
+    border: 1px solid #241a24 ;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.favCategory .card .images:hover{
+    background: linear-gradient(90deg, rgba(80,14,126,1) 0%, rgba(28,127,218,1) 100%);
+}
+
+.favCategory .card .cardText h4{
+    color: #1391e8;
+    font-weight: lighter;
+}
+
+
+.favContent{
+    padding: 4rem 4%;
+}
+
+.favContent .card{
+    width: 300px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #241a24;
+    cursor: pointer;
+    position: relative;
+}
+
+.favContent .card .images,
+.favContent .card .images img{
+    width: 100%;
+}
+
+.favContent .card .cardText{
+    padding: 15px 0;
+    border-top: 1px solid #241a24;
+}
+
+.favContent .card .cardText h3{
+    margin: 10px 0;
+    letter-spacing: 4px;
+}
+
+.favContent .card .cardText h4{
+    color:#1391e8 ;
+}
+
+.favContent .card .overlay{
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.favContent .card .overlay h3{
+    background-color: #1391e8;
+    padding: 5px 10px;
+}
+
+.favContent .card .overlay h4{
+    background-color: green;
+    padding: 5px 10px;
+}
+
+
+.favContent .card .purchase{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+.favContent .card .purchase ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: .5s;
+}
+
+.favContent .card:hover .purchase ul{
+    transform: translateY(0px);
+    transform-origin: top;
+    opacity: 1;
+}
+
+.favContent .card .purchase li{
+    margin-right: 10px;
+}
+
+.favContent .card .purchase li i{
+    color: #000000;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Clients */
+.clients{
+    background-color: #16121f;
+    padding: 3rem 4%;
+}
+
+.clients .title{
+    text-align: center;
+}
+
+.clients .title h1{
+    font-size: 50px;
+    color: #fff;
+    letter-spacing: 4px;
+}
+
+/* client content */
+.clientsContent{
+    padding-top: 60px;
+}
+
+.clientsContent .card{
+    width: 600px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.clientsContent .card .cardText{
+    margin: 10px 0;
+}
+
+.clientsContent .card ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clientsContent .card ul li{
+    margin-right: 10px;
+}
+
+.clientsContent .card ul li h3{
+    color: #1391e8;
+}
+
+.clientsContent .card .ratting{
+    margin: 10px 0;
+}
+
+/* Hot Selling */
+.hot{
+    padding: 4rem 4%;
+    background-color: #16121f;
+}
+
+.hotContent {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hotContent .card{
+    width: 360px;
+    color: #fff;
+    background-color: #000;
+    padding: 15px;
+    text-align: justify;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.hotContent .card:hover{
+    transition: .5s;
+    background: linear-gradient(90deg, rgba(80,14,126,1) 0%, rgba(28,127,218,1) 100%);
+}
+
+.hotContent .card .cardText{
+    padding: 15px;
+    text-align: center;
+}
+
+.hotContent .card .cardText h3{
+    letter-spacing: 3px;
+}
+
+.hotContent .card .cardText p{
+    margin-top: 15px;
+}
+
+.hotContent .card .cardText i{
+    margin-right: 10px;
+}
+
+.hotContent .card .images,
+.hotContent .card .images img{
+    width: 100%;
+}
+
+/* Featured */
+.featured{
+    background-color: #000;
+    padding: 4rem 4%;
+}
+
+/* Service */
+.service{
+    background-image: url('services-bg.jpg');
+    padding: 4rem 4%;
+    color: #fff;
+}
+
+.serviceContent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.serviceContent .cardBx .cards{
+    display: flex;
+    background-color: #150e17;
+    padding: 20px 10px;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.serviceContent .cardBx .cards .images{
+    margin-right: 20px;
+    background-color: #2d272f;
+    padding: 10px;
+}
+
+/* Lattest */
+.latest{
+    background-color: #000;
+    padding: 4rem 4%;
+}
+
+/* News */
+.news{
+    background-color: #000;
+    padding: 4rem 4%;
+}
+
+.newsContent{
+    color: #fff;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.newsContent .card{
+    width: 360px;
+}
+
+.newsContent .card .images,
+.newsContent .card .images img{
+    width: 100%;
+}
+
+.newsContent .card .cardText{
+    padding: 10px;
+}
+
+.newsContent .card ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.newsContent .card i{
+    margin-right: 10px;
+}
+
+/* Support */
+.support{
+    background-color: #16121f;
+    padding: 2rem 4%;
+}
+
+.support .card{
+    width: 270px;
+    cursor: pointer;
+}
+
+.support .card img{
+    filter: grayscale(100%);
+}
+
+.support .card:hover img{
+    filter: brightness(100%);
+}
+
+/* Footer */
+footer{
+    background-image: url('footer.jpg');
+    padding: 2rem 4%;
+    color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    margin-top: 15px;
+    text-shadow: 2px 2px #000;
+}
+
+footer i{
+    margin-right: 10px;
+}
+
+footer h3{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer p{
+    margin-bottom: 10px;
+}
+
+footer input{
+    padding: 10px;
+}
+
+footer button{
+    background: linear-gradient(90deg, rgba(80,14,126,1) 0%, rgba(28,127,218,1) 100%);
+    padding: 12px;
+    border: none;
+    color: #fff;
+}
